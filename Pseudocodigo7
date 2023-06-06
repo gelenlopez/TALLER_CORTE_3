@@ -1,0 +1,46 @@
+Algoritmo Calculo_de_sueldos
+	
+	definir sueldo_base, complemento_destino, complemento_cargo, sueldo_bruto, impuestos, sueldo_neto Como Real
+	definir horas_extra, hijos, mayores_dependientes Como Entero
+	
+	porcentaje_irpf <- 24
+	
+	Escribir "Sueldo base: "
+	Leer sueldo_base
+	
+	Escribir "Complemento de destino: " 
+	leer complemento_destino
+	
+	Escribir "Complemento de cargo academico "
+	Leer complemento_cargo
+	
+	Escribir "Horas extra realizadas: "
+	leer horas_extra
+	
+	Escribir "hijos: "
+	Leer hijos
+	
+	Escribir "Mayores dependientes: "
+	Leer mayores_dependientes
+	
+	sueldo_bruto <- sueldo_base + complemento_destino + complemento_cargo + (horas_extra * 23)
+	
+	porcentaje_irpf <- (2 * hijos) + mayores_dependientes
+	
+	impuestos <- sueldo_bruto * (porcentaje_irpf / 100)
+	
+	sueldo_neto <- sueldo_bruto - impuestos
+	
+	Escribir "Cálculo de la nómina"
+	Escribir "Sueldo base: ", sueldo_base
+	Escribir "Complemento de destino: ", complemento_destino
+	Escribir "Complemento de cargo académico: ", complemento_cargo
+	Escribir "Horas extra realizadas: ", horas_extra
+	Escribir "Hijos: ", hijos
+	Escribir "Mayores dependientes: ", mayores_dependientes
+	Escribir "Sueldo bruto: ", sueldo_bruto
+	Escribir "Porcentaje de IRPF: ", porcentaje_irpf
+	Escribir "Retención por IRPF: ", impuestos
+	Escribir "Sueldo neto: ", sueldo_neto
+	
+FinAlgoritmo
