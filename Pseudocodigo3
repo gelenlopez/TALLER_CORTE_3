@@ -1,0 +1,12 @@
+Algoritmo TiempoTranscurrido
+    Definir segundos, horas, minutos, resto como real
+	
+    Escribir "Ingrese el tiempo transcurrido en segundos:"
+    Leer segundos
+    horas <- segundos / 3600
+    resto <- segundos % 3600
+    minutos <- resto / 60
+    segundos <- resto % 60
+	
+    Escribir "Tiempo equivalente:", horas, "horas,", minutos, "minutos,", segundos, "segundos"
+FinAlgoritmo
