@@ -1,0 +1,39 @@
+Algoritmo AmortizacionPrestamo
+    Definir capital, interes_anual, cuota_mensual, interes_mensual, total_pagado, cantidad_amortizacion, cantidad_intereses como Real
+    Definir años, plazo_meses como Entero
+	
+    // Solicitar los datos al usuario
+    Escribir "Ingrese el capital prestado: "
+    Leer capital
+	
+    Escribir "Ingrese el interés anual: "
+    Leer interes_anual
+	
+    Escribir"Ingrese el número de años: "
+    Leer años
+	
+    // Calcular el plazo en meses
+    plazo_meses <- años * 12
+	
+    // Calcular el interés mensual
+    interes_mensual <- interes_anual / 12 / 100
+	
+    // Calcular la cuota mensual
+    cuota_mensual <- capital * interes_mensual / (100 * (1 - (1 + (interes_mensual / 100) ^(-plazo_meses))))
+	
+    // Calcular el total pagado
+    total_pagado <- cuota_mensual * plazo_meses
+	
+    // Calcular la cantidad de amortización
+    cantidad_amortizacion <- capital
+	
+    // Calcular la cantidad de intereses
+    cantidad_intereses <- total_pagado - cantidad_amortizacion
+	
+    // Mostrar los resultados
+    Escribir "Cuota mensual: ", cuota_mensual
+    Escribir"Total pagado: ", total_pagado
+    Escribir"Cantidad de amortización: ", cantidad_amortizacion
+    Escribir "Cantidad de intereses: ", cantidad_intereses
+	
+FinAlgoritmo
