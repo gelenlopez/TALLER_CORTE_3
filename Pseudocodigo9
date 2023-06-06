@@ -1,0 +1,23 @@
+Algoritmo CalcularAreaTriangulo
+	Definir seno Como Numerica
+     P = 3.14159265
+    
+    // Solicitar al usuario los valores del lado 1, lado 2 y el ángulo entre ellos
+    Escribir "Ingrese el lado 1 del triángulo:"
+    Leer lado1
+    
+    Escribir "Ingrese el lado 2 del triángulo:"
+    Leer lado2
+    
+    Escribir "Ingrese el ángulo (en grados) entre los dos lados:"
+    Leer angulo
+    
+    // Calcular el área del triángulo
+    radianes <- angulo * (P / 180.0)
+    seno <- sen(radianes)
+    
+    area = 0.5 * lado1 * lado2 * seno
+    
+    // Mostrar el resultado
+    Escribir "El área del triángulo es: ", area
+FinAlgoritmo
