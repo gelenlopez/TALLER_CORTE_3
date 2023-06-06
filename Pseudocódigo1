@@ -1,0 +1,9 @@
+Algoritmo VolumenDeUnCono
+	
+	P <- 3.141592
+	radio <-14.5
+	altura <-26.79
+	Resultado <-( P * radio^2 * altura ) / 3
+	Escribir "El resultado es: ", resultado
+	
+FinProceso
