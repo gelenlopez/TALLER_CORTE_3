@@ -1,0 +1,10 @@
+Proceso PasarDeGradosFahrenheitACeilcius
+	
+	Imprimir "Convertidor a Fahrenheit"
+	Imprimir "Escribe el valor en Fahrenheit que quieras convertir"
+	Leer fahrenheit desde el usuario
+	
+	celsius = (fahrenheit - 32) * 5 / 9
+	Imprimir "Equivale a:", celsius
+
+FinProceso
