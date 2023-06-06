@@ -1,0 +1,32 @@
+Algoritmo Expresiones
+    Definir a como Entero
+    Definir d como Real
+
+    a <- 1
+    d <- 1.0
+
+    // 1
+    a <- 46 % 9 + 4 * 4 - 2
+    Mostrar "1. a = " + a
+
+    // 2
+    a <- 45 + 43 % 5 * (23 * 3 % 2)
+    Mostrar "2. a = " + a
+
+    // 3
+    a <- 45 + 45 * 50 % (a - 1)
+    Mostrar "3. a = " + a
+
+    // 4
+    d <- 1.5 * 3 + d + 1
+    Mostrar "4. d = " + d
+
+    // 5
+    d <- 1.5 * 3 + d
+    Mostrar "5. d = " + d
+
+    // 6
+    a <- a Mod (3 / a + 3)
+    Mostrar "6. a = " + a
+
+FinAlgoritmo
